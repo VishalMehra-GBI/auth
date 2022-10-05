@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, asciidoctor, data, data-jdbc, flyway, gcp-secrets-manager, github-workflow-ci, gradle, http-client, jackson-databind, java, java-application, jdbc-hikari, jooq, junit, logback, lombok, micronaut-build, netty-server, openapi, postgres, properties, readme, shade, swagger-ui, test-resources]
