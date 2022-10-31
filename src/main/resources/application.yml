@@ -16,10 +16,10 @@ jpa:
 google:
   idp:
     url: https://content-identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=
-    key: AIzaSyC0dJu0sSyGhtR1DNO8dz1awEEXvPQjpl0
+    key: #KEY#
 
 token:
-  secret: uiJcoDAyqV2WRAMijmC2bN0sUnNafbUFmurwK2T2BHtDtw0vDDMSTtYepbP2
+  secret: #SECRET#
   issuer: atlas-command-center-api
   ttl: 3600
 
@@ -27,7 +27,7 @@ datasources:
   default:
     schema-generate: NONE
     dialect: POSTGRES
-    password: Passw0rd1
+    password: #PASSWORD#
     username: vishal
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres
