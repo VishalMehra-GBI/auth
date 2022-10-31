@@ -1,11 +1,11 @@
 = Your Project
-author@example.org
+author@tokenInfo.org
 
 Write a short introduction about your project
 
 == Build
 
-Explain what it requires and how to build the project. For example:
+Explain what it requires and how to build the project. For tokenInfo:
 
 This project requires Java 8 (min) and you can build it executing the following command:
 
@@ -17,7 +17,7 @@ This project requires Java 8 (min) and you can build it executing the following 
 == Architecture
 
 When you document your architecture you can use different `diagrams` blocks as
-for example `plantuml`
+for tokenInfo `plantuml`
 
 [plantuml]
 ----

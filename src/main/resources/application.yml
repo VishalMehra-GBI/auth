@@ -1,0 +1,51 @@
+micronaut:
+  server:
+    port: 8081
+
+jackson:
+  bean-introspection-module: true
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        show_sql: true
+
+google:
+  idp:
+    url: https://content-identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=
+    key: AIzaSyC0dJu0sSyGhtR1DNO8dz1awEEXvPQjpl0
+
+token:
+  secret: uiJcoDAyqV2WRAMijmC2bN0sUnNafbUFmurwK2T2BHtDtw0vDDMSTtYepbP2
+  issuer: atlas-command-center-api
+  ttl: 3600
+
+datasources:
+  default:
+    schema-generate: NONE
+    dialect: POSTGRES
+    password: Passw0rd1
+    username: vishal
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    hikari:
+      pool-name: postgres-pool
+      minimum-idle: 2
+      maximum-pool-size: 5
+      leak-detection-threshold: 60000
+      connection-test-query: "SELECT 1"
+      validation-timeout: 50000
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+        useLocalSessionState: true
+        rewriteBatchedStatements: true
+        cacheResultSetMetadata: true
+        cacheServerConfiguration: true
+        elideSetAutoCommits: true
+        maintainTimeStats: false
